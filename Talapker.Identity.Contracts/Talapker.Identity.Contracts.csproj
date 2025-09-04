@@ -4,7 +4,11 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.1</Version>
+    <Authors>Islambek</Authors>
+    <Description>Contracts for Talapker.Identity identity provider</Description>
+    <RepositoryUrl>https://github.com/Talapkerbek/Talapker.Identity.Contracts.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Talapkerbek/Talapker.Identity.Contracts</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup>
