@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      - name: Change to src directory
+        run: cd src
 
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
