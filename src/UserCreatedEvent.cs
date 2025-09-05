@@ -1,3 +1,3 @@
 ﻿namespace Talapker.Identity.Contracts;
 
-public record UserCreatedEvent(Guid Id, string FirstName, string LastName, string Email, string DeNormalizedName);
+public record UserCreatedEvent(Guid Id, string FirstName, string LastName, string Email, string JustCheckingGit);
