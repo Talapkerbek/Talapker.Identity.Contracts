@@ -8,9 +8,6 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    defaults: 
-      run: 
-        working-directory: src
 
     permissions:
       contents: read      
@@ -24,11 +21,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
-
-      - name: Debug paths
-        run: |
-          pwd
-          ls -la
 
       - name: Restore dependencies
         run: dotnet restore
