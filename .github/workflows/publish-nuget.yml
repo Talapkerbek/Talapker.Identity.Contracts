@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    defaults: 
+      run: 
+        working-directory: src
 
     permissions:
       contents: read      
@@ -17,9 +20,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Change to src directory
-        run: cd src
-
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
